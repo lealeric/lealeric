@@ -1,4 +1,4 @@
-<p align="left">👋 Hi, I'm Eric!<br><br>-🤔 Passionately exploring new technologies and developing software solutions.<br>-🎓 Studying Bachelor of Information Systems at UNIRIO.<br>-💼 Working as a Python Dev at IBGE.<br>-❤️Passionate for Data Science and Network Analysis.<br>-🌱 Learning more about front-end development.</p>
+<p align="left">👋 Hi, I'm Eric!<br><br>-🤔 Exploring new technologies and developing software solutions.<br>-🎓 Studying Bachelor of Information Systems at UNIRIO.<br>-💼 Working as a Python Dev at IBGE.<br>-❤️Passionate for Data Science and Network Analysis.<br>-🌱 Learning more about front-end development.</p>
 
 ###
 

@@ -43,10 +43,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/lealeric/lealeric/output/snake.svg" alt="Snake animation" />
-
-###
-
 <div align="center">
   <a href="https://open.spotify.com/user/12145361705">
     <img src="https://spotify-recently-played-readme.vercel.app/api?user=12145361705&count=5&unique=true" alt="Spotify recently played"  />

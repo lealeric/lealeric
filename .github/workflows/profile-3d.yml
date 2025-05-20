@@ -1,6 +1,3 @@
-
-
-
 name: GitHub-Profile-3D-Contrib
 
 on:
@@ -14,15 +11,30 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v2
+
+      - name: Verificar mudanças pendentes
+        run: |
+          git status
+
+      - name: Adicionar e commitar mudanças, se necessário
+        run: |
+          git add -A
+          git commit -m "Salvando mudanças antes do pull" || echo "Nenhuma mudança para commit"
+
       - uses: yoshi389111/github-profile-3d-contrib@0.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
+
+      - name: Configurar usuário do GitHub
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git pull --rebase # Pull remote changes and rebase local commits
-          git add -A .
-          git commit -m "generated" || echo "No changes to commit"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Realizar pull com rebase
+        run: |
+          git pull --rebase
+
+      - name: Enviar mudanças para o repositório
+        run: |
           git push
